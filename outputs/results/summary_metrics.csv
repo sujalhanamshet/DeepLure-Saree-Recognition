@@ -1,0 +1,24 @@
+Category,Metric,Value
+Training,Total Training Time,24.57 min
+Training,Best Validation Loss,0.2252
+Training,Final Train Loss,0.1234
+Pair Verification,Calibrated Threshold (tau*),0.4279
+Pair Verification,Accuracy,99.17%
+Pair Verification,Precision,98.36%
+Pair Verification,Recall,100.00%
+Pair Verification,F1-Score,99.17%
+Pair Verification,ROC-AUC,1.0000
+Synthetic Stress (Jitter),Top-1 Accuracy,96.67%
+Synthetic Stress (Jitter),Top-5 Accuracy,100.00%
+Synthetic Stress (Jitter),MRR,0.9833
+Synthetic Stress (Grayscale),Top-1 Accuracy,98.33%
+Synthetic Stress (Grayscale),Top-5 Accuracy,100.00%
+Synthetic Stress (Grayscale),MRR,0.9917
+Synthetic Stress (Hue Shift),Top-1 Accuracy,96.67%
+Synthetic Stress (Hue Shift),Top-5 Accuracy,100.00%
+Synthetic Stress (Hue Shift),MRR,0.9833
+Efficiency,Total Parameters,"11,571,520"
+Efficiency,Embedding Dimension,256
+Efficiency,Model Size,~44.14 MB
+Efficiency,Inference Latency,44.733 ms
+Efficiency,Throughput,22.4 FPS

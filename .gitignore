@@ -1,0 +1,68 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+
+# Proprietary Dataset Directories & Images (Strictly Excluded)
+data/
+archive/
+handloom_sarees/
+handloom_sarees*/
+*.rf.*
+*.tar
+*.zip
+*.tar.gz
+
+# Large training checkpoints with full optimizer states (>100MB)
+outputs/benchmark/
+outputs/checkpoints/best_model.pth
+
+# Whitelist trained model weights, evaluation metrics, figures, and results
+!outputs/checkpoints/best_model_weights.pth
+!outputs/checkpoints/final_model.pth
+!outputs/results/
+!outputs/metrics/
+!outputs/figures/

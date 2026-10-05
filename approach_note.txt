@@ -1,0 +1,7 @@
+Architecture: ColorInvariantSareeEncoder with ResNet-18 backbone, 512-d MLP projection head, and L2 normalization (256-d embedding).
+Rationale: Metric learning on unit hypersphere decouples structural weave motifs from chromatic bias.
+Preprocessing: 224x224 resize, ImageNet normalization directly on C:\deeplure.
+Augmentations: Severe RandomGrayscale(p=0.35), heavy ColorJitter(hue=0.4, sat=0.5), GaussianBlur, RandomAutocontrast, RandomResizedCrop.
+Sampling: Two-crop multi-view sampling of 431 disjoint design classes (1,293 train images).
+Training/Loss: Supervised Contrastive Loss (SupCon, tau=0.07) pulling same-design views together while repelling distinct designs.
+Postprocessing: Cosine similarity retrieval (Top-K) and validation-calibrated thresholding for pairwise verification, evaluated under standard retrieval and synthetic color-invariance stress tests.
